@@ -1,10 +1,12 @@
 <script>
 	import WeeklyViews from '../../components/Charts/WeeklyViews/WeeklyViews.svelte';
+	import Nav from '../../components/Nav/Nav.svelte';
 </script>
 
-<div>
-	<div class="w-full border-2 p-4 h-[500px] flex items-center justify-evenly">
+<div class="w-full h-full flex flex-col sm:flex-row items-start justify-start">
+	<div
+		class="w-full h-auto border-y-2 mx-auto flex-col md:flex-row items-center justify-start px-4 py-2"
+	>
 		<WeeklyViews />
-		<div class="w-full h-full" />
 	</div>
 </div>

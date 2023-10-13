@@ -11,6 +11,7 @@
 	const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 	const barWidth = 10;
 	const barRadius = 5;
+	const fontFamily = `'Kumbh Sans', sans-serif`;
 	let config: ChartConfiguration = {
 		type: 'bar',
 		data: {
@@ -42,7 +43,7 @@
 					},
 					ticks: {
 						font: {
-							family: `'Kumbh Sans', sans-serif`,
+							family: fontFamily,
 							size: 14,
 							weight: 'medium'
 						}
@@ -51,7 +52,7 @@
 				y: {
 					ticks: {
 						font: {
-							family: `'Kumbh Sans', sans-serif`,
+							family: fontFamily,
 							size: 14,
 							weight: 'medium'
 						}
@@ -66,11 +67,25 @@
 						boxWidth: 15, //Adjusts box width of each bar in legend
 						boxHeight: 0, //Adjusts box height of each bar in legend
 						font: {
-							family: `'Kumbh Sans', sans-serif`,
+							family: fontFamily,
 							size: 12,
 							weight: 'bold'
 						}
 					}
+				},
+				tooltip: {
+					boxPadding: 4,
+					cornerRadius: 5,
+					titleFont: {
+						family: fontFamily
+					},
+					bodyFont: {
+						family: fontFamily,
+						weight: 'bold'
+					},
+					usePointStyle: true,
+					bodyAlign: 'center',
+					padding: 8
 				}
 			}
 		}
@@ -86,10 +101,10 @@
 </script>
 
 <div
-	class="p-4 px-6 flex flex-col items-start justify-between border-[1px] border-neutral-100 w-full h-auto rounded-3xl hover:shadow-xl"
+	class="p-4 flex flex-col items-start justify-between w-full lg:w-[50%] xl:w-[40%] h-full xl:h-auto rounded-3xl hover:shadow-xl border-2 transition-all ease-out"
 >
-	<div class="w-full flex justify-between items-center mb-4">
-		<h2 class="font-bold text-xl">Weekly Views</h2>
+	<div class="w-full h-full flex justify-between items-center">
+		<h2 class="font-bold text-md xl:text-xl">Weekly Views</h2>
 		<button class="font-bold border-[1px] p-2 pb-[3px] pt-0 rounded-full hover:bg-neutral-100"
 			>></button
 		>
