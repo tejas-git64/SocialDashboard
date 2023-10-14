@@ -20,7 +20,7 @@
 				{
 					label: 'Dribble',
 					data: dribbleaData,
-					backgroundColor: '#A3FF40',
+					backgroundColor: '#B9F576',
 					barThickness: barWidth,
 					borderRadius: barRadius,
 					barPercentage: 0.8
@@ -101,13 +101,11 @@
 </script>
 
 <div
-	class="p-4 flex flex-col items-start justify-between w-full lg:w-[50%] xl:w-[40%] h-full xl:h-auto rounded-3xl hover:shadow-xl border-2 transition-all ease-out"
+	class="p-4 py-2 flex flex-col items-start justify-between w-full h-full lg:w-[50%] lg:h-[270px] xl:w-[510px] rounded-2xl hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out mt-3 md:mt-0 mr-3 bg-white"
 >
-	<div class="w-full h-full flex justify-between items-center">
-		<h2 class="font-bold text-md xl:text-xl">Weekly Views</h2>
-		<button class="font-bold border-[1px] p-2 pb-[3px] pt-0 rounded-full hover:bg-neutral-100"
-			>></button
-		>
+	<div class="w-full h-full md:h-auto flex justify-between items-center -mb-5">
+		<h2 class="font-bold text-md xl:text-lg">Weekly Views</h2>
+		<button>></button>
 	</div>
 	<canvas id="barChart" bind:this={barCanvas} class="w-full h-full" />
 </div>
