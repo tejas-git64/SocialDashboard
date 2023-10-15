@@ -7,3 +7,9 @@ export type CardType = {
 	percentageIncrease: string;
 	bgColor: string;
 };
+
+export type ProjectType = {
+	name: string;
+	popularityPercentage: number;
+	color: string;
+};

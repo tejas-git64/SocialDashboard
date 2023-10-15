@@ -7,7 +7,7 @@
 
 <div
 	style="background: linear-gradient(45deg, {card.bgColor}, #fff);"
-	class="w-[31.5%] h-52 sm:h-[210px] md:h-[230px] lg:h-full xl:w-[30%] xl:max-w-[250px] rounded-2xl p-3 sm:p-[14px] sm:py-[10px] xl:py-[16px] hover:shadow-xl transition-all ease-in"
+	class="w-[31.5%] flex-shrink-0 sm:max-w-auto md:w-[31.5%] h-52 sm:h-[210px] md:h-[230px] lg:h-full xl:max-w-[250px] rounded-2xl p-3 sm:p-[14px] sm:py-[10px] xl:py-5 hover:shadow-xl transition-all ease-in"
 >
 	<div class="flex h-auto md:h-auto items-start justify-between">
 		<img src={card.icon} alt="social-logo" class="w-12 h-12 xl:w-[50px] xl:h-[50px] rounded-full" />

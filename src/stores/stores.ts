@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 import youtube from '../assets/images/icons8-youtube-50.png';
 import insta from '../assets/images/icons8-instagram-64.png';
 import dribbble from '../assets/images/icons8-dribbble-48.png';
-export const colors = ['#FF89CA', '#B389FF', '#B9F576'];
+export const colors = ['#FF89CA', '#B389FF', '#B9F576', '#FFC345'];
 
 export const socialMediaCards = writable([
 	{
@@ -31,5 +31,28 @@ export const socialMediaCards = writable([
 		likes: 4682,
 		percentageIncrease: '20%',
 		bgColor: colors[2]
+	}
+]);
+
+export const projects = writable([
+	{
+		name: 'Digital Doodles & Prose Painters',
+		popularityPercentage: 80,
+		color: colors[0]
+	},
+	{
+		name: 'Paper Trails & Pixel Tales',
+		popularityPercentage: 60,
+		color: colors[2]
+	},
+	{
+		name: 'Font Fanatics Fusion',
+		popularityPercentage: 50,
+		color: colors[1]
+	},
+	{
+		name: 'Playful Words & Designs',
+		popularityPercentage: 30,
+		color: colors[3]
 	}
 ]);
