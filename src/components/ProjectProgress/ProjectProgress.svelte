@@ -16,7 +16,7 @@
 		<!--Progress bar-->
 		<div
 			style="background: linear-gradient(90deg,{project.color},#fff);"
-			class="w-[25vw] md:w-[32vw] h-[5px] sm:h-[6px] mr-2 sm:mr-4 lg:w-[12vw] xl:w-32 text-sm font-medium border-none"
+			class="w-[25vw] md:w-[32vw] h-[5px] sm:h-[6px] mr-2 sm:mr-4 lg:w-[12vw] xl:w-32 text-sm font-medium border-none rounded-xl"
 		>
 			<div
 				style="background-color: {project.color}; width: {project.popularityPercentage +
