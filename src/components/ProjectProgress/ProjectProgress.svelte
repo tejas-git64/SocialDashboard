@@ -4,7 +4,7 @@
 	export let index: number;
 </script>
 
-<div class="w-full flex items-center justify-start text-neutral-600 py-2 border-t-[1px]">
+<div class="w-full flex items-center justify-start text-neutral-600 py-3 border-t-[1px]">
 	<p class="sm:w-[14%] w-[12.5%] md:w-[60px] lg:w-[60px] text-sm font-medium">
 		{index > 9 ? index + 1 : '0' + (index + 1)}
 	</p>
