@@ -84,7 +84,7 @@
 			<button on:click={decrementMonth} class="border-none p-0 outline-none">
 				<img src={previous} alt="previous" class="w-6 h-6" />
 			</button>
-			<p class="px-14 py-3 -mb-0.5 md:px-10 font-semibold">{months[month]}</p>
+			<p class="px-14 py-3 -mb-0.5 md:px-10 font-bold text-lg">{months[month]}</p>
 			<button on:click={incrementMonth} class="border-none p-0 outline-none">
 				<img src={next} alt="next" class="w-6 h-6" />
 			</button>
