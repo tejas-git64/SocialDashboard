@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="p-4 flex flex-col items-start justify-between md:justify-start w-full h-auto lg:w-[50%] lg:h-full xl:w-[510px] rounded-2xl hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out mr-3 bg-white mt-3 mb-1.5 lg:my-0"
+	class="p-4 flex flex-col items-start justify-between md:justify-start w-full h-auto lg:w-[50%] lg:max-w-[510px] lg:h-full xl:w-[140%] rounded-2xl hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out bg-white lg:my-0"
 >
 	<div class="w-full h-auto flex justify-between items-center pb-2">
 		<h2 class="font-bold text-md xl:text-lg">Latest Project</h2>

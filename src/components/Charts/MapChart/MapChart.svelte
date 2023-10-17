@@ -87,11 +87,14 @@
 </script>
 
 <div
-	class="w-full h-auto lg:w-[50%] lg:h-full xl:w-[510px] xl:ml-4 bg-white rounded-2xl overflow-hidden my-1.5 lg:my-3 hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
+	class="w-full h-[60vw] md:w-[60%] md:h-full lg:w-full lg:h-[300px] min-[1240px]:w-[55%] lg:mx-2.5 xl:mx-3 xl:max-w-[425px] bg-white rounded-2xl overflow-hidden my-2 lg:my-3 hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
 >
 	<div class="w-full h-auto md:h-14 flex justify-between items-center p-4">
 		<h2 class="font-bold text-md xl:text-lg">Targeting by region</h2>
 		<button>></button>
 	</div>
-	<canvas bind:this={worldCanvas} class="w-full h-auto -translate-x-4 mx-auto" />
+	<canvas
+		bind:this={worldCanvas}
+		class="w-full -translate-x-4 mx-auto min-[1240px]:w-[59.5%] min-[1240px]:my-7 xl:my-4"
+	/>
 </div>
