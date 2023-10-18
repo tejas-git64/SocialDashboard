@@ -3,11 +3,10 @@
 	import { Chart } from 'chart.js';
 	import * as ChartGeo from 'chartjs-chart-geo';
 	import { ChoroplethController, ProjectionScale } from 'chartjs-chart-geo';
-	import { colors } from '../../../stores/stores';
+	import { colors, fontFamily } from '../../../stores/stores';
 
 	let worldCanvas: HTMLCanvasElement;
 	Chart.register(ChoroplethController, ProjectionScale, ChartGeo.ColorScale, ChartGeo.GeoFeature);
-	const fontFamily = `'Kumbh Sans', sans-serif`;
 
 	onMount(() => {
 		const ctx = worldCanvas.getContext('2d');
@@ -44,6 +43,9 @@
 								}
 							},
 							plugins: {
+								colors: {
+									enabled: false
+								},
 								legend: {
 									display: false,
 									align: 'center',
@@ -52,7 +54,7 @@
 										boxWidth: 15, //Adjusts box width of each bar in legend
 										boxHeight: 0, //Adjusts box height of each bar in legend
 										font: {
-											family: fontFamily,
+											family: $fontFamily,
 											size: 12,
 											weight: 'bold'
 										}
@@ -62,10 +64,10 @@
 									boxPadding: 4,
 									cornerRadius: 5,
 									titleFont: {
-										family: fontFamily
+										family: $fontFamily
 									},
 									bodyFont: {
-										family: fontFamily,
+										family: $fontFamily,
 										weight: 'bold'
 									},
 									usePointStyle: true,
@@ -76,7 +78,7 @@
 							scales: {
 								projection: {
 									axis: 'x',
-									projection: 'equalEarth'
+									projection: 'naturalEarth1'
 								}
 							}
 						}

@@ -2,6 +2,7 @@
 	import Calendar from '../components/Calendar/Calendar.svelte';
 	import Card from '../components/Card/Card.svelte';
 	import MapChart from '../components/Charts/MapChart/MapChart.svelte';
+	import Productivity from '../components/Charts/Productivity/Productivity.svelte';
 	import WeeklyViews from '../components/Charts/WeeklyViews/WeeklyViews.svelte';
 	import Project from '../components/Project/Project.svelte';
 	import { socialMediaCards } from '../stores/stores';
@@ -31,5 +32,10 @@
 			<MapChart />
 			<Calendar />
 		</div>
+	</div>
+	<div
+		class="border-2 w-full h-auto lg:h-[320px] mx-auto flex flex-col lg:flex-row items-start justify-center lg:justify-start px-6 py-0 lg:mt-3 bg-neutral-100"
+	>
+		<Productivity />
 	</div>
 </div>

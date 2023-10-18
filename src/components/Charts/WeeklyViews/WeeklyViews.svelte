@@ -3,6 +3,7 @@
 	import { Chart } from 'chart.js';
 	import { registerables } from 'chart.js';
 	import { onMount } from 'svelte';
+	import { fontFamily } from '../../../stores/stores';
 
 	let barCanvas: HTMLCanvasElement;
 	Chart.register(...registerables);
@@ -11,7 +12,6 @@
 	const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 	const barWidth = 8;
 	const barRadius = 3;
-	const fontFamily = `'Kumbh Sans', sans-serif`;
 	let config: ChartConfiguration = {
 		type: 'bar',
 		data: {
@@ -43,7 +43,7 @@
 					},
 					ticks: {
 						font: {
-							family: fontFamily,
+							family: $fontFamily,
 							size: 14,
 							weight: 'medium'
 						}
@@ -52,7 +52,7 @@
 				y: {
 					ticks: {
 						font: {
-							family: fontFamily,
+							family: $fontFamily,
 							size: 14,
 							weight: 'medium'
 						}
@@ -67,7 +67,7 @@
 						boxWidth: 15, //Adjusts box width of each bar in legend
 						boxHeight: 0, //Adjusts box height of each bar in legend
 						font: {
-							family: fontFamily,
+							family: $fontFamily,
 							size: 12,
 							weight: 'bold'
 						}
@@ -77,10 +77,10 @@
 					boxPadding: 4,
 					cornerRadius: 5,
 					titleFont: {
-						family: fontFamily
+						family: $fontFamily
 					},
 					bodyFont: {
-						family: fontFamily,
+						family: $fontFamily,
 						weight: 'bold'
 					},
 					usePointStyle: true,
@@ -103,9 +103,15 @@
 <div
 	class="p-4 py-2 flex flex-col items-start justify-between w-full lg:w-[50%] lg:h-[270px] xl:w-[510px] rounded-2xl hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out mt-3 md:mt-0 mr-3 bg-white"
 >
-	<div class="w-full h-full md:h-auto flex justify-between items-center -mb-5">
+	<div class="w-full h-full md:h-auto flex justify-between items-center -mb-5 py-2">
 		<h2 class="font-bold text-md xl:text-lg">Weekly Views</h2>
 		<button>></button>
 	</div>
-	<canvas id="barChart" bind:this={barCanvas} class="w-full h-full" width="" height="240" />
+	<canvas
+		id="barChart"
+		bind:this={barCanvas}
+		class="w-full h-full p-3 pt-0 pr-4"
+		width=""
+		height="240"
+	/>
 </div>

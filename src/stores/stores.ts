@@ -56,3 +56,5 @@ export const projects = writable([
 		color: colors[3]
 	}
 ]);
+
+export const fontFamily = writable(`'Kumbh Sans', sans-serif`);
