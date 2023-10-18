@@ -81,7 +81,7 @@
 	class="w-full h-auto md:w-[38.5%] md:h-full md:px-2 lg:hidden min-[1240px]:block min-[1240px]:w-[43%] min-[1240px]:h-full xl:w-[280px] border-2 rounded-2xl bg-white"
 >
 	<div class="flex justify-center items-center px-4 xl:px-2">
-		<div class="w-full py-1 flex justify-center">
+		<div class="w-full py-0 flex justify-center">
 			<button on:click={decrementMonth} class="border-none p-0 outline-none">
 				<img src={previous} alt="previous" class="w-6 h-6" />
 			</button>
