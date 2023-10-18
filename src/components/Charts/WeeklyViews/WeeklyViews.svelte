@@ -9,8 +9,8 @@
 	const dribbleaData = [30, 60, 100, 70, 140, 20, 190]; //sample data
 	const instaData = [50, 40, 80, 180, 100, 60, 180]; //sample data
 	const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-	const barWidth = 10;
-	const barRadius = 5;
+	const barWidth = 8;
+	const barRadius = 3;
 	const fontFamily = `'Kumbh Sans', sans-serif`;
 	let config: ChartConfiguration = {
 		type: 'bar',
