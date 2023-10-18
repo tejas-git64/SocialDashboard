@@ -39,7 +39,7 @@
 			let p = document.createElement('p');
 			p.innerHTML += i;
 			p.classList.add('mx-auto');
-			p.classList.add('py-2');
+			p.classList.add('py-1');
 			p.classList.add('md:py-[0.5vw]');
 			if (
 				i === new Date(year, month, date.getDate()).getDate() &&
@@ -47,7 +47,8 @@
 				year === date.getFullYear()
 			) {
 				p.classList.add('bg-pink-100');
-				p.classList.add('px-3.5');
+				p.classList.add('px-3');
+				// p.classList.add('');
 				p.classList.add('font-semibold');
 				p.classList.add('xl:-ml-[4px]');
 				p.classList.add('rounded-full');
@@ -80,7 +81,7 @@
 	class="w-full h-auto md:w-[38.5%] md:h-full md:px-2 lg:hidden min-[1240px]:block min-[1240px]:w-[43%] min-[1240px]:h-full xl:w-[280px] border-2 rounded-2xl bg-white"
 >
 	<div class="flex justify-center items-center px-4 xl:px-2">
-		<div class="w-full py-3 md:py-1 flex justify-center">
+		<div class="w-full py-1 flex justify-center">
 			<button on:click={decrementMonth} class="border-none p-0 outline-none">
 				<img src={previous} alt="previous" class="w-6 h-6" />
 			</button>

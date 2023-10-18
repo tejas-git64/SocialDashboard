@@ -107,5 +107,5 @@
 		<h2 class="font-bold text-md xl:text-lg">Weekly Views</h2>
 		<button>></button>
 	</div>
-	<canvas id="barChart" bind:this={barCanvas} class="w-full h-full" width="" height="250" />
+	<canvas id="barChart" bind:this={barCanvas} class="w-full h-full" width="" height="240" />
 </div>

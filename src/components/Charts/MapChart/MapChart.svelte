@@ -40,7 +40,7 @@
 								choropleth: {
 									backgroundColor: colors,
 									borderColor: 'black',
-									borderWidth: 0.3
+									borderWidth: 0.2
 								}
 							},
 							plugins: {
