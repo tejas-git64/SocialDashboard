@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Calendar from '../components/Calendar/Calendar.svelte';
 	import Card from '../components/Card/Card.svelte';
+	import Expenses from '../components/Charts/Expenses/Expenses.svelte';
 	import MapChart from '../components/Charts/MapChart/MapChart.svelte';
 	import Productivity from '../components/Charts/Productivity/Productivity.svelte';
 	import WeeklyViews from '../components/Charts/WeeklyViews/WeeklyViews.svelte';
@@ -8,7 +9,7 @@
 	import { socialMediaCards } from '../stores/stores';
 </script>
 
-<div class="w-full h-auto flex flex-col items-start justify-start bg-neutral-100">
+<div class="w-full h-full flex flex-col items-start justify-start bg-neutral-100">
 	<div
 		class="w-full h-auto xl:h-[270px] mx-auto flex flex-col lg:flex-row items-center justify-start px-6 lg:mt-3"
 	>
@@ -23,7 +24,7 @@
 		</div>
 	</div>
 	<div
-		class="w-full h-auto lg:h-[300px] xl:h-[300px] mx-auto flex flex-col lg:flex-row items-start justify-center lg:items-center lg:justify-center px-6 py-0 lg:mt-3 bg-neutral-100"
+		class="w-full h-auto lg:h-[300px] mx-auto flex flex-col lg:flex-row items-start justify-center lg:items-center lg:justify-center px-6 py-0 lg:mt-3 bg-neutral-100"
 	>
 		<Project />
 		<div
@@ -34,8 +35,13 @@
 		</div>
 	</div>
 	<div
-		class="border-2 w-full h-auto lg:h-[320px] mx-auto flex flex-col lg:flex-row items-start justify-center lg:justify-start px-6 py-0 lg:mt-3 bg-neutral-100"
+		class="w-full h-auto lg:h-[300px] mx-auto border-2 flex flex-col md:h-auto md:justify-between md:items-center md:flex-row items-start justify-center lg:items-center lg:justify-center px-6 py-0 lg:mt-3 bg-neutral-100"
 	>
 		<Productivity />
+		<div
+			class="w-full h-auto md:w-full md:h-full flex items-center justify-between xl:justify-start flex-col md:flex-row my-0"
+		>
+			<Expenses />
+		</div>
 	</div>
 </div>

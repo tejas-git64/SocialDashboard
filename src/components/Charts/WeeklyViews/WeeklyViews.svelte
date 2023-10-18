@@ -101,7 +101,7 @@
 </script>
 
 <div
-	class="p-4 py-2 flex flex-col items-start justify-between w-full lg:w-[50%] lg:h-[270px] xl:w-[510px] rounded-2xl hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out mt-3 md:mt-0 mr-3 bg-white"
+	class="p-4 py-2 flex flex-col items-start justify-between w-full lg:w-[50%] lg:h-[270px] xl:w-[510px] rounded-2xl hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out mt-3 md:mt-0 sm:mr-3 bg-white"
 >
 	<div class="w-full h-full md:h-auto flex justify-between items-center -mb-5 py-2">
 		<h2 class="font-bold text-md xl:text-lg">Weekly Views</h2>

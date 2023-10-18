@@ -4,7 +4,6 @@
 	import { colors, fontFamily } from '../../../stores/stores';
 
 	let prodCanvas: HTMLCanvasElement;
-	let prodChart;
 	const data1 = [2, 0.5, 2.3, 2.8, 1.3, 3, 3.7, 1, 2.3, 2.5, 1.8, 1.5];
 	const data2 = [0.5, 2, 3.5, 1.5, 2.5, 2.3, 3, 3.5, 0.5, 3, 3.5, 2];
 	let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -121,13 +120,13 @@
 					}
 				}
 			};
-			prodChart = new Chart(ctx, config);
+			const prodChart = new Chart(ctx, config);
 		}
 	});
 </script>
 
 <div
-	class="w-full h-auto mt-2 md:mt-0 md:w-[60%] md:h-full lg:w-[510px] lg:mr-2.5 xl:mr-3 xl:max-w-[510px] bg-white rounded-2xl overflow-hidden mb-2 lg:mb-0 hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
+	class="w-full h-auto pb-2 mt-2 md:mt-0 md:w-[130%] md:h-full md:mr-3 lg:max-w-[510px] lg:h-full xl:w-[140%] lg:mr-2.5 xl:max-w-[510px] bg-white rounded-2xl overflow-hidden lg:mb-0 hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
 >
 	<div class="w-full h-auto md:h-14 flex justify-between items-center p-4">
 		<h2 class="font-bold text-md xl:text-lg">Productivity</h2>
@@ -135,7 +134,7 @@
 	</div>
 	<canvas
 		bind:this={prodCanvas}
-		class="w-full mx-auto h-auto min-[1240px]:w-[59.5%] pr-5"
+		class="w-full mx-auto h-auto md:mt-10 md:pb-6 lg:mt-0 min-[1240px]:w-[59.5%] pr-5"
 		id="prodChart"
 	/>
 </div>
