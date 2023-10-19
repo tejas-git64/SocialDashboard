@@ -116,7 +116,7 @@
 </script>
 
 <div
-	class="w-full h-[55vw] mt-2 md:mt-0 md:w-full md:h-full lg:w-full lg:h-full min-[1240px]:w-[55%] lg:mr-2.5 xl:max-w-[425px] bg-white rounded-2xl overflow-hidden hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
+	class="w-full h-[55vw] mt-2 md:mt-0 md:w-full md:h-full lg:w-full lg:h-full min-[1240px]:w-[55%] lg:mr-3 xl:max-w-[425px] bg-white rounded-2xl overflow-hidden hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
 >
 	<div class="w-full h-auto md:h-14 flex justify-between items-center p-4">
 		<h2 class="font-bold text-md xl:text-lg">Expenses</h2>

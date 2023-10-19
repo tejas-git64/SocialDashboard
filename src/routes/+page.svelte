@@ -6,6 +6,7 @@
 	import Productivity from '../components/Charts/Productivity/Productivity.svelte';
 	import WeeklyViews from '../components/Charts/WeeklyViews/WeeklyViews.svelte';
 	import Project from '../components/Project/Project.svelte';
+	import Team from '../components/Team/Team.svelte';
 	import { socialMediaCards } from '../stores/stores';
 </script>
 
@@ -42,6 +43,7 @@
 			class="w-full h-auto md:w-full md:h-full flex items-center justify-between xl:justify-start flex-col md:flex-row my-0"
 		>
 			<Expenses />
+			<Team />
 		</div>
 	</div>
 </div>

@@ -2,6 +2,8 @@ import { writable } from 'svelte/store';
 import youtube from '../assets/images/icons8-youtube-50.png';
 import insta from '../assets/images/icons8-instagram-64.png';
 import dribbble from '../assets/images/icons8-dribbble-48.png';
+import femaledp from '../assets/images/icons8-female-user-94-brown.png';
+import maledp from '../assets/images/icons8-user-male-188-blonde.png';
 export const colors = ['#FF89CA', '#B389FF', '#B9F576', '#FFC345'];
 
 export const socialMediaCards = writable([
@@ -58,3 +60,12 @@ export const projects = writable([
 ]);
 
 export const fontFamily = writable(`'Kumbh Sans', sans-serif`);
+
+export const team = writable([
+	{ image: maledp, name: 'Nicholas Esthiru' },
+	{ image: femaledp, name: 'Hanna Clark' },
+	{ image: femaledp, name: 'Stephaine Brynes' },
+	{ image: maledp, name: 'Marc Anthony' },
+	{ image: femaledp, name: 'Mary Ann' },
+	{ image: femaledp, name: 'Emily Frost' }
+]);

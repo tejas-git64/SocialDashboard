@@ -126,7 +126,7 @@
 </script>
 
 <div
-	class="w-full h-auto pb-2 mt-2 md:mt-0 md:w-[130%] md:h-full md:mr-3 lg:max-w-[510px] lg:h-full xl:w-[140%] lg:mr-2.5 xl:max-w-[510px] bg-white rounded-2xl overflow-hidden lg:mb-0 hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
+	class="w-full h-auto pb-2 mt-2 md:mt-0 md:w-[130%] md:h-full md:mr-3 lg:max-w-[510px] lg:h-full xl:w-[140%] lg:mr-3 xl:max-w-[510px] bg-white rounded-2xl overflow-hidden lg:mb-0 hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
 >
 	<div class="w-full h-auto md:h-14 flex justify-between items-center p-4">
 		<h2 class="font-bold text-md xl:text-lg">Productivity</h2>

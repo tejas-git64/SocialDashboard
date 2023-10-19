@@ -89,7 +89,7 @@
 </script>
 
 <div
-	class="w-full h-[60vw] md:w-[60%] md:h-full lg:w-full lg:h-[300px] min-[1240px]:w-[55%] lg:mx-2.5 xl:mx-3 xl:max-w-[425px] bg-white rounded-2xl overflow-hidden my-2 lg:my-3 hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
+	class="w-full h-[60vw] md:w-[60%] md:h-full lg:w-full lg:h-[300px] min-[1240px]:w-[55%] lg:mx-3 xl:max-w-[425px] bg-white rounded-2xl overflow-hidden my-2 lg:my-3 hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out"
 >
 	<div class="w-full h-auto md:h-14 flex justify-between items-center p-4">
 		<h2 class="font-bold text-md xl:text-lg">Targeting by region</h2>
