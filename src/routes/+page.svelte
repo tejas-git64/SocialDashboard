@@ -36,7 +36,7 @@
 		</div>
 	</div>
 	<div
-		class="w-full h-auto lg:h-[300px] mx-auto border-2 flex flex-col md:h-auto md:justify-between md:items-center md:flex-row items-start justify-center lg:items-center lg:justify-center px-6 py-0 lg:mt-3 bg-neutral-100"
+		class="w-full h-auto lg:h-[300px] mx-auto flex flex-col md:h-auto md:justify-between md:items-center md:flex-row items-start justify-center lg:items-center lg:justify-center px-6 py-0 lg:mt-3 bg-neutral-100"
 	>
 		<Productivity />
 		<div
