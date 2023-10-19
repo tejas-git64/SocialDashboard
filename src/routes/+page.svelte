@@ -17,7 +17,7 @@
 		<WeeklyViews />
 		<div
 			id="social-cards"
-			class="w-full h-full flex justify-between xl:w-[50%] xl:ml-0.5 lg:h-[270px] 2xl:w-[600px] items-center mt-3 mb-3 lg:my-0 lg:py-0"
+			class="w-full h-full flex justify-between xl:w-[60%] xl:ml-0.5 lg:w-[510px] lg:h-[270px] 2xl:w-[715px] items-center mt-3 mb-3 lg:my-0 lg:py-0"
 		>
 			{#each $socialMediaCards as card, index (index)}
 				<Card {card} />

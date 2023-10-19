@@ -7,7 +7,7 @@
 
 <div
 	style="background: linear-gradient(45deg, {card.bgColor}, #fff);"
-	class="relative w-[31.5%] flex-shrink-0 sm:max-w-auto md:w-[31.5%] h-52 sm:h-[210px] md:h-[230px] lg:h-full xl:max-w-[250px] rounded-2xl p-3 sm:p-[14px] sm:py-[10px] xl:py-5 hover:shadow-xl transition-all ease-in overflow-hidden z-10"
+	class="relative w-[31.5%] flex-shrink-0 sm:max-w-auto md:w-[31.5%] h-52 sm:h-[210px] md:h-[230px] lg:h-full xl:max-w-[260px] rounded-2xl p-3 sm:p-[14px] sm:py-[10px] xl:py-5 hover:shadow-xl transition-all ease-in overflow-hidden"
 >
 	<div
 		style="box-shadow: inset -5px 0px 10px {card.bgColor};"

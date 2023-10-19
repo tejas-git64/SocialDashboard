@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="w-full h-auto pb-6 md:pb-0 md:w-[38.5%] mt-2 md:mt-0 md:h-full px-4 md:hidden min-[1240px]:block min-[1240px]:w-[43%] min-[1240px]:h-full xl:w-[280px] border-2 rounded-2xl bg-white"
+	class="w-full h-auto pb-6 mb-10 md:mb-0 md:pb-0 md:w-[38.5%] mt-2 md:mt-0 md:h-full px-4 md:hidden min-[1240px]:block min-[1240px]:w-[43%] min-[1240px]:h-full xl:w-[280px] border-2 rounded-2xl bg-white hover:shadow-xl"
 >
 	<div class="w-full h-auto md:h-14 flex justify-between items-center p-4 px-0">
 		<h2 class="font-bold text-md xl:text-lg">Team</h2>
