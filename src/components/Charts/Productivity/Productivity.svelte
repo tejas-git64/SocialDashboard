@@ -24,7 +24,7 @@
 							fill: true,
 							tension: 0.5,
 							pointStyle: 'circle',
-							backgroundColor: 'rgba(255,137,202,0.6)',
+							backgroundColor: 'rgba(255,137,202,0.7)',
 							pointBackgroundColor: 'rgba(0,0,0,0)',
 							pointBorderWidth: 0,
 							borderWidth: 0
@@ -35,7 +35,7 @@
 							borderColor: colors[2],
 							fill: true,
 							tension: 0.5,
-							backgroundColor: 'rgba(185,245,118,0.8)',
+							backgroundColor: 'rgba(185,245,118,0.7)',
 							pointBackgroundColor: 'rgba(0,0,0,0)',
 							pointBorderWidth: 0,
 							borderWidth: 0
@@ -56,20 +56,28 @@
 									weight: 'bold',
 									size: 13
 								},
-								borderRadius: 15,
-								boxHeight: 10,
-								boxWidth: 10
+								borderRadius: 10,
+								boxHeight: 11,
+								boxWidth: 11,
+								useBorderRadius: true,
+								usePointStyle: false
 							}
 						},
 						tooltip: {
 							padding: 8,
 							titleFont: {
-								family: $fontFamily
+								family: $fontFamily,
+								lineHeight: 1,
+								weight: 'bold'
 							},
 							bodyFont: {
-								family: $fontFamily
+								family: $fontFamily,
+								lineHeight: 1,
+								weight: 'bold'
 							},
-							usePointStyle: true
+							boxPadding: 5,
+							cornerRadius: 5,
+							bodyAlign: 'center'
 						}
 					},
 					scales: {

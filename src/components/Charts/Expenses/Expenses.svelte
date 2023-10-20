@@ -16,9 +16,9 @@
 			const gradient1 = ctx.createLinearGradient(0, 0, 0, 350);
 			const gradient2 = ctx.createLinearGradient(0, 0, 0, 220);
 			gradient1.addColorStop(0, 'rgba(185,245,118,0.6)');
-			gradient1.addColorStop(0.4, '#fff');
-			gradient2.addColorStop(0, 'rgba(179,137,255,0.3)');
-			gradient2.addColorStop(0.4, '#fff');
+			gradient1.addColorStop(0.5, '#fff');
+			gradient2.addColorStop(0, 'rgba(179,137,255,0.6)');
+			gradient2.addColorStop(0.5, '#fff');
 			const config: ChartConfiguration = {
 				type: 'line',
 				data: {
@@ -30,7 +30,9 @@
 							borderColor: colors[2],
 							fill: true,
 							tension: 0.3,
-							backgroundColor: gradient1
+							backgroundColor: gradient1,
+							pointRadius: 4,
+							pointBackgroundColor: colors[2]
 						},
 						{
 							label: 'This month',
@@ -38,7 +40,9 @@
 							borderColor: colors[1],
 							fill: true,
 							tension: 0.4,
-							backgroundColor: gradient2
+							backgroundColor: gradient2,
+							pointRadius: 4,
+							pointBackgroundColor: colors[1]
 						}
 					]
 				},
@@ -56,21 +60,29 @@
 									weight: 'bold',
 									size: 13
 								},
-								borderRadius: 100,
 								boxHeight: 10,
 								boxWidth: 10,
-								padding: 20
+								padding: 20,
+								useBorderRadius: true,
+								usePointStyle: true
 							}
 						},
 						tooltip: {
 							padding: 8,
 							titleFont: {
-								family: $fontFamily
+								family: $fontFamily,
+								lineHeight: 0,
+								weight: 'bold'
 							},
 							bodyFont: {
-								family: $fontFamily
+								family: $fontFamily,
+								lineHeight: 0,
+								weight: 'bold'
 							},
-							usePointStyle: true
+							usePointStyle: true,
+							bodyAlign: 'center',
+							boxPadding: 4,
+							cornerRadius: 5
 						}
 					},
 					scales: {

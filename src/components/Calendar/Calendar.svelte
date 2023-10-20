@@ -16,7 +16,7 @@
 		'November',
 		'December'
 	];
-	const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+	const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 	const date = new Date();
 	let year = date.getFullYear();
 	let month = date.getMonth();
@@ -39,7 +39,8 @@
 			let p = document.createElement('p');
 			p.innerHTML += i;
 			p.classList.add('mx-auto');
-			p.classList.add('py-1');
+			p.classList.add('text-sm');
+			p.classList.add('py-0.5');
 			p.classList.add('md:py-[0.5vw]');
 			p.classList.add('font-semibold');
 			if (
@@ -50,7 +51,7 @@
 				p.classList.add('bg-pink-100');
 				p.classList.add('px-3');
 				p.classList.add('font-extrabold');
-				p.classList.add('xl:-ml-[4px]');
+				p.classList.add('xl:-ml-0.5');
 				p.classList.add('rounded-full');
 			}
 			daysSection.appendChild(p);
@@ -85,15 +86,15 @@
 			<button on:click={decrementMonth} class="border-none p-0 outline-none">
 				<img src={previous} alt="previous" class="w-6 h-6" />
 			</button>
-			<p class="px-14 py-3 -mb-0.5 md:px-10 font-bold text-lg">{months[month]}</p>
+			<p class="px-14 py-3 -mb-0.5 md:px-6 font-bold text-lg">{months[month]}</p>
 			<button on:click={incrementMonth} class="border-none p-0 outline-none">
 				<img src={next} alt="next" class="w-6 h-6" />
 			</button>
 		</div>
 	</div>
-	<div class="flex justify-evenly px-2 py-1 md:px-0 md:py-[4%] lg:py-0">
+	<div class="grid grid-cols-7 py-1 md:px-1 md:py-[4%] lg:py-0">
 		{#each days as day}
-			<p class="text-sm font-bold lg:font-semibold px-1 sm:px-4 md:px-0 lg:py-2">{day}</p>
+			<p class="text-sm font-bold lg:font-semibold mx-auto sm:px-4 md:px-0 lg:py-2">{day}</p>
 		{/each}
 	</div>
 	<div

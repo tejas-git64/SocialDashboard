@@ -47,7 +47,8 @@
 		</div>
 		<div class="w-full h-full flex items-center justify-start px-2 hover:bg-red-100 rounded-xl">
 			<img src={logout} alt="logout" class="w-7 h-7 p-0.5 mr-3" />
-			<button class="w-36 text-left h-full p-2 text-sm font-semibold rounded-none border-none"
+			<button
+				class="w-36 text-left h-full p-2 text-sm font-semibold rounded-none border-none text-red-500"
 				>Logout</button
 			>
 		</div>
