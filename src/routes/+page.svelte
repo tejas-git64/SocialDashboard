@@ -5,6 +5,7 @@
 	import MapChart from '../components/Charts/MapChart/MapChart.svelte';
 	import Productivity from '../components/Charts/Productivity/Productivity.svelte';
 	import WeeklyViews from '../components/Charts/WeeklyViews/WeeklyViews.svelte';
+	import Profile from '../components/Profile/Profile.svelte';
 	import Project from '../components/Project/Project.svelte';
 	import SearchBar from '../components/SeachBar/SearchBar.svelte';
 	import Team from '../components/Team/Team.svelte';
@@ -19,6 +20,7 @@
 			<h2 class="text-xl md:text-2xl font-bold mr-8">Dashboard</h2>
 			<SearchBar />
 		</div>
+		<Profile />
 	</header>
 	<div
 		class="w-full h-auto xl:h-[270px] mx-auto flex flex-col lg:flex-row items-center justify-start px-6"
