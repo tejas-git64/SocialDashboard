@@ -1,0 +1,12 @@
+<script lang="ts">
+	import search from '../../assets/images/icons8-search-50.png';
+</script>
+
+<div class="w-full h-full rounded-xl pr-8 bg-white hidden md:flex items-center justify-start">
+	<img src={search} alt="searchIcon" class="w-11 h-11 p-3" />
+	<input
+		type="search"
+		class="w-full h-full outline-none placeholder:font-medium font-medium"
+		placeholder="Search"
+	/>
+</div>

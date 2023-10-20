@@ -4,6 +4,8 @@
 
 body {
 	font-family: 'Kumbh Sans', sans-serif;
+	-webkit-filter: none;
+	filter: none;
 }
 
 button {

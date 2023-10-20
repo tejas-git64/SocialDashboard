@@ -6,11 +6,20 @@
 	import Productivity from '../components/Charts/Productivity/Productivity.svelte';
 	import WeeklyViews from '../components/Charts/WeeklyViews/WeeklyViews.svelte';
 	import Project from '../components/Project/Project.svelte';
+	import SearchBar from '../components/SeachBar/SearchBar.svelte';
 	import Team from '../components/Team/Team.svelte';
 	import { socialMediaCards } from '../stores/stores';
 </script>
 
 <div class="w-full h-full flex flex-col items-start justify-start bg-neutral-100">
+	<header
+		class="w-[91%] sm:w-[93%] sm:ml-5 lg:w-[95%] lg:ml-6 min-[1240px]:w-[93.5%] xl:w-[96%] 2xl:w-[1240px] mx-auto h-12 border-2 mt-3 flex items-center justify-between"
+	>
+		<div class="w-[60%] h-full flex items-center justify-start">
+			<h2 class="text-xl font-bold mr-8">Dashboard</h2>
+			<SearchBar />
+		</div>
+	</header>
 	<div
 		class="w-full h-auto xl:h-[270px] mx-auto flex flex-col lg:flex-row items-center justify-start px-6 lg:mt-3"
 	>

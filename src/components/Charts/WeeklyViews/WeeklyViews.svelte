@@ -101,7 +101,7 @@
 </script>
 
 <div
-	class="p-2 flex flex-col items-start justify-between w-full lg:w-[50%] lg:h-[270px] xl:w-[510px] rounded-2xl hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out mt-3 md:mt-0 sm:mr-3 bg-white"
+	class="p-2 flex flex-col items-start justify-between w-full lg:w-[50%] lg:h-[270px] xl:w-[510px] rounded-2xl hover:shadow-xl border-[1px] border-neutral-200 transition-all ease-out mt-3 lg:mt-0 sm:mr-3 bg-white"
 >
 	<div class="w-full h-full md:h-auto flex justify-between items-center -mb-5 p-2">
 		<h2 class="font-bold text-md xl:text-lg">Weekly Views</h2>
@@ -111,7 +111,6 @@
 		id="barChart"
 		bind:this={barCanvas}
 		class="w-full h-full p-3 pt-0 pr-4 md:pb-5"
-		width=""
 		height="240"
 	/>
 </div>
