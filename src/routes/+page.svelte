@@ -5,6 +5,8 @@
 	import MapChart from '../components/Charts/MapChart/MapChart.svelte';
 	import Productivity from '../components/Charts/Productivity/Productivity.svelte';
 	import WeeklyViews from '../components/Charts/WeeklyViews/WeeklyViews.svelte';
+	import Language from '../components/Language/Language.svelte';
+	import Notifs from '../components/Notifs/Notifs.svelte';
 	import Profile from '../components/Profile/Profile.svelte';
 	import Project from '../components/Project/Project.svelte';
 	import SearchBar from '../components/SeachBar/SearchBar.svelte';
@@ -17,10 +19,14 @@
 		class="w-[91%] sm:w-[93%] sm:ml-5 lg:w-[95%] lg:ml-6 min-[1240px]:w-[93.5%] xl:w-[96%] 2xl:w-[1240px] mx-auto h-12 my-3 lg:my-6 flex items-center justify-between"
 	>
 		<div class="w-[60%] h-full flex items-center justify-start">
-			<h2 class="text-xl md:text-2xl font-bold mr-8">Dashboard</h2>
+			<h2 class="text-xl md:text-2xl font-bold ml-[1%] md:ml-0 mr-8">Dashboard</h2>
 			<SearchBar />
 		</div>
-		<Profile />
+		<Language />
+		<div class="w-auto flex items-center justify-evenly">
+			<Notifs />
+			<Profile />
+		</div>
 	</header>
 	<div
 		class="w-full h-auto xl:h-[270px] mx-auto flex flex-col lg:flex-row items-center justify-start px-6"
