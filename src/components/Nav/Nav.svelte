@@ -11,11 +11,25 @@
 	import shiny from '../../assets/images/icons8-clean-64.png';
 	import { slide } from 'svelte/transition';
 	import { showNav } from '../../stores/stores';
+	import { onMount } from 'svelte';
+
+	function handleResize() {
+		if (window.innerWidth >= 1280) {
+			$showNav = true;
+		} else {
+			$showNav = false;
+		}
+	}
+	onMount(() => {
+		handleResize();
+		window.addEventListener('resize', handleResize);
+	});
 </script>
 
 <nav
 	transition:slide
 	class="w-80 z-20 fixed xl:flex xl:w-96 h-full border-2 transition-all ease-out xl:relative bg-white overflow-hidden flex-col items-center justify-between overflow-y-scroll"
+	id="sideNav"
 	style={$showNav ? 'transform: translateX(0%)' : 'transform: translateX(-100%)'}
 >
 	<div>
@@ -94,3 +108,9 @@
 		/>
 	</div>
 </nav>
+
+<style>
+	#sideNav::-webkit-scrollbar {
+		width: 0px;
+	}
+</style>
