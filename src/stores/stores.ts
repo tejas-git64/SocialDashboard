@@ -69,3 +69,5 @@ export const team = writable([
 	{ image: femaledp, name: 'Mary Ann' },
 	{ image: femaledp, name: 'Emily Frost' }
 ]);
+export const notifMenu = writable(false);
+export const showNav = writable(false);
